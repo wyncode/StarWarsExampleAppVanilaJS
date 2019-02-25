@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="data:image/x-icon" type="image/x-icon">
+  <title>Star Wars!</title>
+
+  <!-- Bootstrap  -->
+  <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Animate.css cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+  <!-- Local styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="text-center">
+    <img src="images/logo.png" alt="star wars logo" width="25%">
+  </header>
+  <main class="container">
+    <div class="row">
+
+      <section class="jumbotron col-10 offset-1 col-md-8 offset-md-2 text-center mt-4">
+        <h1>Lookup any Star Wars Character!</h1>
+        <form>
+          <div class="form-group">
+            <label for="characters"></label>
+            <select name="characters" id="characters" class="form-control">
+              <option value="---">Choose a character</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <div id="results" class="jumbotron col-10 offset-1 col-md-8 offset-md-2 text-center d-none animated"></div>
+
+    </div>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
