@@ -10,8 +10,8 @@ fetch('https://swapi.co/api/people')
     data.results.forEach( (character, index) => {
       characters.innerHTML += `<option value="${index}">${character.name}</option>`
     })
-    .catch( errors => console.log( errors ) )
   })
+  .catch( errors => console.log( errors ) )
 
 characters.addEventListener("change", e => {
   results.innerHTML = ""
