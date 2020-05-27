@@ -2,7 +2,7 @@ let charactersFromApi = []
 let characters = document.getElementById("characters")
 let results = document.getElementById("results")
 
-fetch('https://swapi.co/api/people')
+fetch('https://swapi.dev/api/people')
   .then( res => res.json() )
   .then( data => {
     charactersFromApi = data.results
